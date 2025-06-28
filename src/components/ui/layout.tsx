@@ -1,5 +1,11 @@
 import { ReactNode } from 'react';
 import { Toaster } from 'sonner';
+import './globals.css'; // (if you use global styles)
+
+export const metadata = {
+  title: 'WebbyWolf',
+  description: 'Your digital partner to elevate ideas 🚀',
+};
 
 interface RootLayoutProps {
   children: ReactNode;
