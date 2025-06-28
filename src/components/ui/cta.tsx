@@ -1,4 +1,3 @@
-// components/cta.tsx
 'use client';
 
 import Link from 'next/link';
@@ -46,6 +45,7 @@ export default function CTA() {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
         >
+          {/* ✅ asChild requires exactly one element — keep Link inline */}
           <Button
             asChild
             className="px-10 py-3 text-lg rounded-full font-subheading font-semibold
@@ -57,8 +57,6 @@ export default function CTA() {
             <Link href="#contact">
               🚀 Get Started Today
             </Link>
-
-
           </Button>
         </motion.div>
       </div>
